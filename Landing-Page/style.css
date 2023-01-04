@@ -141,3 +141,45 @@ main{
     width: 100%;
     
 }
+
+footer{
+    width: 100%;
+    height:7vh;
+    
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: rgb(22, 22, 22, 0.3);
+    
+}
+
+.footer-content p{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color:white;
+    
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color:white;
+    font-size:1.5rem;
+    text-decoration: none;
+}
+
+.social-list ul{
+    display: flex;
+    color:white;
+    
+}
