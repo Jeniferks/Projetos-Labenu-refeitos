@@ -28,7 +28,7 @@ function Sidebar() {
 
         );
         return () => {
-            unsubscribe()
+            unsubscribe();
         }
     }, [])
 
