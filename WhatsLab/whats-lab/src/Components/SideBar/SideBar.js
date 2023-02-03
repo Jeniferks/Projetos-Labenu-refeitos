@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "./SideBar.css"
-import { Avatar, IconButton } from '@material-ui/core'
-import DonutLargeIcon from '@mui/icons-material/DonutLarge';
-import ChatIcon from '@mui/icons-material/Chat';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { Avatar } from '@material-ui/core'
+// import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+// import ChatIcon from '@mui/icons-material/Chat';
+// import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { SearchOutlined } from '@mui/icons-material';
 import SidebarChat from '../SidebarChat/SidebarChat';
 import db from "../../firebase"
@@ -37,15 +37,7 @@ function Sidebar() {
             <div className='sidebar__header'>
                 <Avatar src={user?.photoURL}/>
                 <div className='sidebar__headerRight'>
-                    <IconButton>
-                        <DonutLargeIcon />
-                    </IconButton>
-                    <IconButton>
-                        <ChatIcon />
-                    </IconButton>
-                    <IconButton>
-                        <MoreVertIcon />
-                    </IconButton>
+                    {user.displayName}
 
 
                 </div>
@@ -53,9 +45,10 @@ function Sidebar() {
             </div>
 
             <div className='sidebar__search'>
+                <SearchOutlined />
                 <div className='sidebar__searchContainer'>
-                    <SearchOutlined />
-                    <input placeholder='Pesquisar ou começar uma nova conversa' type="text" />
+                    
+                    <input  placeholder='Pesquisar ou começar uma nova conversa' type="text" />
                 </div>
             </div>
 

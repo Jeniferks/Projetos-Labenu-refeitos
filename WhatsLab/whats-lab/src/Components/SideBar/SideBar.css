@@ -1,13 +1,19 @@
 .sidebar__header{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     padding: 20px;
-    border-right: 1px solid #d3d3d3;
+    /* background-color: #eecfea; */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #bdffd7);
+    border-right: 1px solid #c16cb6;
+    font-size: x-large;
+    
     
 }
 
 .sidebar {
-    flex: 0.35;
+    flex: 0.38;
     display: flex;
     flex-direction: column;
 }
@@ -15,29 +21,41 @@
 .sidebar__search{
     display: flex;
     align-items: center;
-    background-color: #f6f6f6;
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #bdffd7);
     height: 39px;
     padding: 10px;
+    padding-top: 12px;
+    box-shadow:#c16cb6 0px 2px 30px 2px;
 }
+
+/* .input__search {
+    
+} */
 
 .sidebar__searchContainer{
     display:flex;
     align-items: center;
     background-color: #ffff;
-    width: 100%;
+    width: 89%;
     height: 35px;
     border-radius: 20px;
 }
 
 .sidebar__searchContainer > input {
+    width: 75%;
+    
     border: none;
-    margin-left:10px;
+    margin-left:20px;
+    width: inherit;
+    
 }
 
-.sidebar__searchContainer > .MuiSvgIcon-root {
+/* .sidebar__searchContainer > .MuiSvgIcon-root {
     color: gray;
     padding: 10px;
-}
+} */
 .sidebar__headerRight{
     display: flex;
     align-items: center;
@@ -45,14 +63,17 @@
     min-width: 11vw;
 }
 
-.sidebar__headerRight > .MuiSvgIcon-root{
+/* .sidebar__headerRight > .MuiSvgIcon-root{
     margin-right: 2vw;
     font-size: 24px !important;
-}
+} */
 
 .sidebar__chats{
     flex: 1;
-    background-color: whitesmoke;
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #bdffd7);
     overflow: scroll;
+    
 
 }

@@ -98,7 +98,7 @@ const Chat = () => {
             <div className='chat__footer'>
                 <InsertEmoticonIcon />
                 <form>
-                    <input value={input} onChange={(e) => setInput(e.target.value)} placeholder='Digite sua mensagem' type="text" />
+                    <input value={input} onChange={(e) => setInput(e.target.value)} placeholder='Digite sua mensagem' type="text"  autoComplete='off' name="text" className='input'/>
                     <button onClick={sendMessage}>Enviar mensagem</button>
                 </form>
                 <MicIcon />
